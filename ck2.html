@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css_ck2.css">
+    </head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item title">
+            <h2 id="titulo-foto">Diagrama de flujo</h2>
+            <img class=foto_diagrama src="diagrama de flujo.PNG">
+        </div>
+
+        <div class="grid-item logo">
+            <img src="ck2_logo.png" id="logo">
+
+        </div>
+
+
+        <div class="grid-item tabla-flex-container-flujos">
+            <div class="flujo-flex-item header-tabla">Nombre</div>
+            <div class="flujo-flex-item">F1</div>
+            <div class="flujo-flex-item">F2</div>
+            <div class="flujo-flex-item">F3</div>
+            <div class="flujo-flex-item">F4</div>
+            <div class="flujo-flex-item">F5</div>
+
+        </div>
+
+        <div class="grid-item tabla-flex-container-explicacion">
+            <div class="explicacion-flex-item header-tabla">Descripción</div>
+            <div class="explicacion-flex-item">Aire fresco</div>
+            <div class="explicacion-flex-item">Mezcla entrada a quemador</div>
+            <div class="explicacion-flex-item">Salida de ventilador/entrada a secador</div>
+            <div class="explicacion-flex-item">Aire recirculado</div>
+            <div class="explicacion-flex-item">Descarga de aire</div>
+
+        </div>
+
+
+        <div class="grid-item tabla-flex-container-valores">
+            <div class="valores-flex-item header-tabla">Flujo, kg/s</div>
+            <div class="valores-flex-item to-clear" id="f1">-</div>
+            <div class="valores-flex-item to-clear" id="f2">-</div>
+            <div class="valores-flex-item to-clear" id="f3">-</div>
+            <div class="valores-flex-item to-clear" id="f4">-</div>
+            <div class="valores-flex-item to-clear" id="f5">-</div>
+
+        </div>
+
+        <div class="grid-item tabla-flex-container-temperaturas">
+            <div class="valores-flex-item header-tabla">Temperatura, °C</div>
+            <div class="valores-flex-item to-clear" id="t_f1">-</div>
+            <div class="valores-flex-item to-clear" id="t_f2">-</div>
+            <div class="valores-flex-item to-clear" id="t_f3">-</div>
+            <div class="valores-flex-item to-clear" id="t_f4">-</div>
+            <div class="valores-flex-item to-clear" id="t_f5">-</div>
+
+        </div>
+
+        <div class="grid-item tabla-flex-container-humedades">
+            <div class="valores-flex-item header-tabla">H. Relativa, %</div>
+            <div class="valores-flex-item to-clear" id="h_f1">-</div>
+            <div class="valores-flex-item to-clear" id="h_f2">-</div>
+            <div class="valores-flex-item to-clear" id="h_f3">-</div>
+            <div class="valores-flex-item to-clear" id="h_f4">-</div>
+            <div class="valores-flex-item to-clear" id="h_f5">-</div>
+
+        </div>
+
+    </div>
+
+    <div class="grid-bottom-container">
+        <div class="grid-bottom-item titulo-parametros">Parámetros Entrada</div>
+        <div class="grid-bottom-item parametros-flex-container">
+            <div class="parametros-flex-item">Flujo aire, m3/h</div>
+            <div class="parametros-flex-item">Temperatura ambiente, °C</div>
+            <div class="parametros-flex-item">Humedad relativa aire, %</div>
+            <div class="parametros-flex-item">Temperatura de secado, °C</div>
+            <div class="parametros-flex-item">Masa Tomate, kg</div>
+            <div class="parametros-flex-item">Porcentaje agua producto, %</div>
+        </div>
+
+        <div class="grid-bottom-item valores-parametros-flex-container">
+            <input type="number" class="valores-parametros-flex-item" id="flujo_aire" placeholder="3000">
+            <input type="number" class="valores-parametros-flex-item" id="temperatura_ambiente" placeholder="25">
+            <input type="number" class="valores-parametros-flex-item" id="hr_aire" placeholder="60">
+            <input type="number" class="valores-parametros-flex-item" id="temperatura_operacion_secador" placeholder="65">
+            <input type="number" class="valores-parametros-flex-item" id="masa_tomate" placeholder="400">
+            <input type="number" class="valores-parametros-flex-item" id="humedad_objetivo" placeholder="30">
+        </div>
+
+        <div class="grid-bottom-item titulo-resultados">Resultados</div>
+        <div class="grid-botton-item resultados-flex-container">
+            <div class="resultados-flex-item">Energía requerida de gas, kW</div>
+            <div class="resultados-flex-item">Tiempo de secado, h</div>
+            <div class="resultados-flex-item">Consumo de gas, kg/h</div>
+            <div class="resultados-flex-item">Consumo total de gas, kg</div>
+            <div class="resultados-flex-item">Agua retirada, kg</div>
+            <div class="resultados-flex-item">Tomate deshidratado producido, kg</div>
+        </div>
+
+        <div class="grid-bottom-item valores-resultados-flex-container">
+            <div class="valores-resultados-flex-item to-clear" id="q_gas">-</div>
+            <div class="valores-resultados-flex-item to-clear" id="tiempo_secado_horas">-</div>
+            <div class="valores-resultados-flex-item to-clear" id="consumo_gas">-</div>
+            <div class="valores-resultados-flex-item to-clear" id="consumo_gas_total">-</div>
+            <div class="valores-resultados-flex-item to-clear" id="agua_retirada">-</div>
+            <div class="valores-resultados-flex-item to-clear" id="masa_tomate_deshidratado">-</div>
+        </div>
+
+        <div class="grid-bottom-item flex-container-buttons">
+            <div class="flex-item-button" ><button id="button_1">Ejecutar</button></div>
+            <div class="flex-item-button"><button id="button_2">Limpiar</button></div>
+        </div>
+
+
+    </div>
+    
+    <script src="bundle.js"></script>
+
+</body>
+
+
+
+</html>

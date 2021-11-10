@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-ck2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ck2_main.js",
+  "scripts": {
+    "build": "browserify ck2_main.js -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}

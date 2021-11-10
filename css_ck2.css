@@ -1,0 +1,310 @@
+
+
+body {
+    background-color: #1e6463
+}
+
+.grid-container {
+    display: grid;
+    color: black;
+    font-family: 'Lucida Sans';
+    grid-template: 0.6fr 0.8fr 0.05fr/ 6fr 1fr 3fr 1.2fr 1.2fr 1.2fr;
+    grid-template-areas: 
+    "logo logo logo logo logo logo"
+    "titulo flujos-flex explicacion-flex valores-flex temperaturas-flex humedades-flex" 
+    ". . . . . ."
+}
+
+.logo {
+    grid-area: logo;
+    
+}
+
+#logo {
+    height: 60%;
+    width: 80%;  
+    padding: 6% 10% 1% 10%;
+}
+
+.title {
+    grid-area: titulo;  
+}
+
+.foto_diagrama { 
+    height: 75%;
+    width: 85%;
+    padding: 0px 0px 0px 10%;
+}
+.grid-item {
+    text-align: left;
+    border: blueviolet solid 0px;
+}
+
+.tabla-flex-container-flujos {
+    display: flex;
+    grid-area: flujos-flex;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-left:black solid 1px;
+    text-align: center;
+}
+
+.flujo-flex-item {
+    border-top: black solid 1px;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+    background-color: white;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    padding: 20% 0 20% 0;
+    font-size: 100%;
+}
+
+.tabla-flex-container-explicacion{
+    display: flex;
+    grid-area: explicacion-flex;
+    flex-direction: column;
+    border: black solid 1px;
+    text-align: center;   
+}
+
+.explicacion-flex-item {
+    border: black solid 1px;
+    background-color: white;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    text-align: left;
+    padding: 7% 0 1% 1%;
+    font-size: 100%;
+}
+
+.tabla-flex-container-valores {
+    display: flex;
+    grid-area: valores-flex;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    text-align: center;
+    font-size: 100%;
+}
+
+.valores-flex-item {
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+    background-color: white;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    padding: 15% 0 10% 0;
+    font-size: 100%;
+}
+
+#titulo-foto {
+    font-size: 30px;
+    color:whitesmoke;
+    text-shadow: 3px 3px 0 #000;
+    text-align: center;
+}
+
+.tabla-flex-container-temperaturas {
+    display: flex;
+    grid-area: temperaturas-flex;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    text-align: center;
+    
+}
+
+.tabla-flex-container-humedades {
+    display: flex;
+    grid-area: humedades-flex;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    text-align: center;
+}
+
+.header-tabla {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    
+
+}
+
+
+.grid-bottom-container {
+    display: grid;
+    color: black;
+    font-family: 'Lucida Sans';
+    grid-template: 0.1fr 1fr/0.85fr 0.85fr 1fr 0.85fr 0.85fr;
+    border:tomato solid 0px;
+    grid-template-areas: 
+    "titulo-parametros titulo-parametros . titulo-resultados titulo-resultados "
+    "parametros-entrada valores-parametros-entrada buttons-flexbox resultados valores-resultados"
+}
+
+
+.parametros-flex-container {
+    display: flex;
+    grid-area: parametros-entrada;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    border-left: black solid 1px;
+    text-align: left;
+    
+}
+
+.titulo-parametros {
+    grid-area: titulo-parametros;
+    color:whitesmoke;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 #000;
+    text-align: center;
+    
+    
+}
+
+.parametros-flex-item {
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+    border-left: black solid 1px; 
+    background-color: lightblue;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    padding: 20px 0 20px 1%;
+    font-size: 100%;
+    
+}
+
+.valores-parametros-flex-container {
+    display: flex;
+    grid-area: valores-parametros-entrada;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    text-align: left;
+}
+
+.valores-parametros-flex-item {
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+    background-color: white;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+    text-align: center;
+
+}
+
+
+.resultados-flex-container {
+    display: flex;
+    grid-area: resultados;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    border-left: black solid 1px;
+    text-align: left;
+}
+
+.titulo-resultados {
+    grid-area: titulo-resultados;
+    color:whitesmoke;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 #000;
+    text-align: center;
+}
+
+.resultados-flex-item {
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+    border-left: black solid 1px; 
+    background-color: lightcoral;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    padding: 20px 0 20px 1px;
+    font-size: 100%;
+}
+
+
+
+.valores-resultados-flex-container {
+    display: flex;
+    grid-area: valores-resultados;
+    flex-direction: column;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-right:black solid 1px;
+    text-align: left;
+}
+
+
+.valores-resultados-flex-item {
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+    background-color: white;
+    color: black;
+    flex-basis: 20%;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 100%;
+}
+
+#button_1 {
+    background: linear-gradient(90deg,rgba(192, 192, 192, 0.733), #808b96, #566573);
+    height: 100%;
+    width: 80%;
+    font-size: 180%;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 #000;
+    padding:  0 0 1% 0;
+}
+
+#button_2 {
+    background: linear-gradient(90deg,rgba(247, 110, 110, 0.733), #db584f, #e21b1b);
+    height: 100%;
+    width: 80%;
+    font-size: 180%;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 #000;
+    padding:  0 0 1% 0;
+}
+
+
+.flex-container-buttons {
+    display: flex;
+    grid-area: buttons-flexbox;
+    flex-direction: column;
+    padding: 25% 0 0 0;
+}
+.flex-item-button {
+    margin: 10px;    
+    text-align: center;
+}
+
