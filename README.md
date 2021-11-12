@@ -2,7 +2,7 @@
 En este proyecto se busca que un usuario pueda de manera sencilla simular diferentes condiciones de operación para la planta de deshidratado de tomate de la empresa Agroindustrial CK2. Para esto se creó una interfaz sencilla en html que permite al usuario ingresar los parámetros de entrada al modelo, éstos se utilizan en un código javascript para calcular el proceso completo y los resultados se muestran posteriormente en la interfaz html.
 
 # Interfaz html
-Es un código sencillo que utiliza css para definir el estilo y está ligado el script bundle.js.
+Es un código sencillo que utiliza css para definir el estilo y está ligado al script bundle.js.
 
 # Código javascript
 Aquí es donde se realizan los cálculos más importantes del proceso. 
